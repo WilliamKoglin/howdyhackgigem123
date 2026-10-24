@@ -1,0 +1,35 @@
+[
+  { "code": "MATH 151", "title": "Engineering Calculus I", "credits": 4, "ucc_tags": ["MATH"], "offered": ["Fall", "Spring", "Summer"] },
+  { "code": "MATH 152", "title": "Engineering Calculus II", "credits": 4, "prereqs": [["MATH 151"]], "offered": ["Fall", "Spring", "Summer"] },
+  { "code": "MATH 251", "title": "Engineering Math III", "credits": 3, "prereqs": [["MATH 152"]] },
+  { "code": "MATH 304", "title": "Linear Algebra", "credits": 3, "prereqs": [["MATH 152"]] },
+
+  { "code": "CSCE 121", "title": "Intro to Program Design & Concepts", "credits": 4, "offered": ["Fall", "Spring", "Summer"] },
+  { "code": "CSCE 221", "title": "Data Structures & Algorithms", "credits": 4, "prereqs": [["CSCE 121"], ["MATH 151"]] },
+  { "code": "CSCE 222", "title": "Discrete Structures for Computing", "credits": 3, "prereqs": [["CSCE 121"], ["MATH 151"]] },
+  { "code": "CSCE 312", "title": "Computer Organization", "credits": 4, "prereqs": [["CSCE 221"]] },
+  { "code": "CSCE 313", "title": "Intro to Computer Systems", "credits": 4, "prereqs": [["CSCE 221"], ["CSCE 312"]] },
+  { "code": "CSCE 314", "title": "Programming Languages", "credits": 3, "prereqs": [["CSCE 221"]] },
+  { "code": "CSCE 315", "title": "Programming Studio", "credits": 3, "prereqs": [["CSCE 221"], ["CSCE 314"]] },
+  { "code": "CSCE 411", "title": "Design & Analysis of Algorithms", "credits": 3, "prereqs": [["CSCE 221"], ["CSCE 222"]] },
+  { "code": "CSCE 420", "title": "Artificial Intelligence", "credits": 3, "prereqs": [["CSCE 221"], ["CSCE 222"]] },
+  { "code": "CSCE 462", "title": "Microcomputer Systems", "credits": 4, "prereqs": [["CSCE 312"]] },
+  { "code": "CSCE 482", "title": "Senior Capstone Design", "credits": 3, "prereqs": [["CSCE 315"]] },
+
+  { "code": "PHYS 206", "title": "Newtonian Mechanics", "credits": 3, "prereqs": [["MATH 151"]], "ucc_tags": ["LIFE_PHYS_SCI"] },
+  { "code": "PHYS 207", "title": "Electricity & Magnetism", "credits": 3, "prereqs": [["PHYS 206"], ["MATH 152"]], "ucc_tags": ["LIFE_PHYS_SCI"] },
+  { "code": "BIOL 111", "title": "Introductory Biology I", "credits": 4, "ucc_tags": ["LIFE_PHYS_SCI"] },
+
+  { "code": "ENGL 103", "title": "Intro to Rhetoric & Composition", "credits": 3, "ucc_tags": ["COMMUNICATION"], "offered": ["Fall", "Spring", "Summer"] },
+  { "code": "ENGL 210", "title": "Technical & Business Writing", "credits": 3, "prereqs": [["ENGL 103"]], "ucc_tags": ["COMMUNICATION"] },
+  { "code": "COMM 203", "title": "Public Speaking", "credits": 3, "ucc_tags": ["COMMUNICATION"] },
+  { "code": "POLS 206", "title": "American National Government", "credits": 3, "ucc_tags": ["GOVT_POLI_SCI"] },
+  { "code": "POLS 207", "title": "State & Local Government", "credits": 3, "ucc_tags": ["GOVT_POLI_SCI"] },
+  { "code": "HIST 105", "title": "History of the US to 1877", "credits": 3, "ucc_tags": ["AMERICAN_HISTORY"] },
+  { "code": "HIST 106", "title": "History of the US since 1877", "credits": 3, "ucc_tags": ["AMERICAN_HISTORY"] },
+  { "code": "ECON 202", "title": "Principles of Economics", "credits": 3, "ucc_tags": ["SOCIAL_BEHAVIORAL"] },
+  { "code": "PSYC 107", "title": "Intro to Psychology", "credits": 3, "ucc_tags": ["SOCIAL_BEHAVIORAL"] },
+  { "code": "PHIL 240", "title": "Intro to Logic", "credits": 3, "ucc_tags": ["LANG_PHIL_CULTURE"] },
+  { "code": "ARTS 149", "title": "Art History Survey", "credits": 3, "ucc_tags": ["CREATIVE_ARTS"] },
+  { "code": "MUSC 201", "title": "Music Appreciation", "credits": 3, "ucc_tags": ["CREATIVE_ARTS"] }
+]

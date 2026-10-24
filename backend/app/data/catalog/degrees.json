@@ -1,0 +1,27 @@
+[
+  {
+    "key": "BS_CSCE",
+    "name": "B.S. Computer Science",
+    "total_credits": 120,
+    "required_courses": [
+      "MATH 151", "MATH 152", "MATH 251", "MATH 304",
+      "CSCE 121", "CSCE 221", "CSCE 222", "CSCE 312", "CSCE 313",
+      "CSCE 314", "CSCE 315", "CSCE 411", "CSCE 420", "CSCE 482",
+      "PHYS 206", "PHYS 207"
+    ],
+    "ucc_requirements": "STANDARD",
+    "elective_credits": 9
+  },
+  {
+    "key": "BS_CE",
+    "name": "B.S. Computer Engineering",
+    "total_credits": 128,
+    "required_courses": [
+      "MATH 151", "MATH 152", "MATH 251",
+      "CSCE 121", "CSCE 221", "CSCE 222", "CSCE 312", "CSCE 462",
+      "PHYS 206", "PHYS 207"
+    ],
+    "ucc_requirements": "STANDARD",
+    "elective_credits": 15
+  }
+]

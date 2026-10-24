@@ -1,4 +1,6 @@
 """FastAPI entrypoint."""
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -6,8 +8,22 @@ from app.models import PlanRequest, PlanResponse
 from app.planner import build_plan
 from app.data.degrees import DEGREES
 from app.data.courses import COURSES
+from app.data.validate import validate_catalog, CatalogError
 
-app = FastAPI(title="TAMU Degree Planner API", version="0.1.0")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Runs once at startup: fail fast if the catalog data is broken.
+    try:
+        validate_catalog()
+    except CatalogError as exc:
+        # Re-raise so the server refuses to start with bad data.
+        raise RuntimeError(str(exc)) from exc
+    yield
+    # (nothing to clean up on shutdown)
+
+
+app = FastAPI(title="TAMU Degree Planner API", version="0.2.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
