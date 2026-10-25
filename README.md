@@ -2,7 +2,7 @@
 
 First-person beach volleyball with no controller, no install. Just a webcam and a browser.
 
-Beach Howdyball is a browser-based, first-person beach volleyball game controlled through real-time webcam hand tracking. Raise, lower, and position your hands to dig, set, and spike your way through a rally. If the camera isn't cooperating, a mouse-driven fallback keeps you playing.
+NET-Working is a browser-based, first-person beach volleyball game controlled through real-time webcam hand tracking. Raise, lower, and position your hands to dig, set, and spike your way through a rally. If the camera isn't cooperating, a mouse-driven fallback keeps you playing.
 
 # Features
 Gesture-based controls - Your hands are the controller.
