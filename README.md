@@ -47,6 +47,8 @@ one hand HIGH
 
 These three states require both hands visible to determine a two-handed set from a one-handed spike. Reducing the problem of reading a body to height and count keeps per-frame inference cheap enough to stay inside render budget.
 
+There is an alternative for serving but that just checks if either hand or both are in the correct positions.
+
 # The timing window
 While the instructions tell the user what to do and when to do it explicitly, some instructions can be ambiguous. We used a closing ring mechanic similar to rhythm games to choose a familiar timing mechanic.
 
